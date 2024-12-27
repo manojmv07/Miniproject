@@ -4,7 +4,6 @@ import './WeatherForecast.css';
 const WeatherForecast = ({ forecast }) => {
   return (
     <div className="forecast-container">
-      <h3>5-Day Forecast</h3>
       <div className="forecast-grid">
         {forecast.map((day, index) => (
           <div key={index} className="forecast-card">
@@ -27,4 +26,4 @@ const WeatherForecast = ({ forecast }) => {
   );
 };
 
-export default WeatherForecast; 
+export default WeatherForecast;

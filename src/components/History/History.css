@@ -3,7 +3,7 @@
     max-width: 1200px;
     margin: 0 auto;
     min-height: 100vh;
-    background: linear-gradient(135deg, #f5f7fa 0%, #e4e7eb 100%);
+    background: linear-gradient(135deg, #f6f9fc 0%, #ffffff 100%);
 }
 
 .history-header {
@@ -16,10 +16,7 @@
 
 .history-header h1 {
     font-size: 2.5rem;
-    background: linear-gradient(135deg, #2ecc71, #27ae60);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: white;
     margin: 0;
 }
 
@@ -32,16 +29,16 @@
 
 .history-card {
     background: white;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 1.5rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    border: 1px solid rgba(46, 204, 113, 0.1);
+    border: 1px solid #e2e8f0;
 }
 
 .history-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .history-meta {
@@ -49,18 +46,14 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
-    padding: 1rem 1.5rem;
-    background: linear-gradient(135deg, rgba(46, 204, 113, 0.08) 0%, rgba(39, 174, 96, 0.08) 100%);
-    border-radius: 12px;
+    color: #4a5568;
+    font-size: 0.9rem;
 }
 
 .history-date, .history-time {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 0.95rem;
-    color: #2c3e50;
-    font-weight: 500;
+    gap: 5px;
 }
 
 .history-content {
@@ -73,7 +66,7 @@
     background: linear-gradient(135deg, rgba(46, 204, 113, 0.1) 0%, rgba(39, 174, 96, 0.1) 100%);
     padding: 1.2rem 1.5rem;
     border-radius: 12px;
-    border-left: 4px solid #27ae60;
+    border-left: 4px solid #0b7ac9;
     transition: all 0.3s ease;
 }
 
@@ -90,26 +83,68 @@
 }
 
 .analysis-title {
-    color: #27ae60;
+    color: #2d3748;
     font-weight: 600;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
 
+.analysis-section {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.analysis-section:last-child {
+    margin-bottom: 0;
+}
+
+.analysis-content {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.verification-section {
+    border-left: 4px solid #4299e1;
+}
+
+.health-section {
+    border-left: 4px solid #3182ce;
+}
+
+.disease-section {
+    border-left: 4px solid #2c5282;
+}
+
+.treatment-section {
+    border-left: 4px solid #2b6cb0;
+}
+
 .clear-history-btn {
-    padding: 0.8rem 1.5rem;
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    padding: 10px 20px;
+    background: #4299e1;
     color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 8px;
     cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.2);
+    transition: background 0.3s ease;
 }
 
 .clear-history-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+    background: #3182ce;
 }
 
+@media (max-width: 768px) {
+    .history-container {
+        padding: 1rem;
+    }
+
+    .history-list {
+        grid-template-columns: 1fr;
+    }
+
+    .history-header h1 {
+        font-size: 2rem;
+    }
+}

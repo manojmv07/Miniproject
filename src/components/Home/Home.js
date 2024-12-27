@@ -1,78 +1,85 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { SettingsContext } from '../../context/SettingsContext';
 import './Home.css';
 
 const Home = () => {
-  const { translate } = useContext(SettingsContext);
-
   return (
     <div className="home-container">
-      {/* Hero Section */}
-      <section className="hero-section">
+      <div className="hero-section">
         <div className="hero-content">
-          <h1 className="animate-title">
-            {translate('welcome')}
-          </h1>
-          <p className="animate-subtitle">
-            {translate('subtitle')}
-          </p>
+          <h1>Plant Disease Detection</h1>
+          <p>Identify and treat plant diseases with our AI-powered analysis</p>
           <Link to="/analyze" className="cta-button">
-            {translate('startAnalysis')}
-            <span className="arrow">→</span>
+            Start Analysis
           </Link>
         </div>
-        <div className="hero-background"></div>
-      </section>
+      </div>
 
-      {/* Features Section */}
-      <section className="features-section">
-        <h2 className="section-title">Key Features</h2>
-        <div className="features-grid">
-          <div className="feature-card" data-aos="fade-up">
-            <div className="feature-icon">🔍</div>
-            <h3>Instant Analysis</h3>
-            <p>Real-time plant disease detection using advanced AI technology</p>
-          </div>
-          <div className="feature-card" data-aos="fade-up" data-aos-delay="100">
-            <div className="feature-icon">💊</div>
-            <h3>Treatment Guide</h3>
-            <p>Detailed treatment recommendations and preventive measures</p>
-          </div>
-          <div className="feature-card" data-aos="fade-up" data-aos-delay="200">
-            <div className="feature-icon">📱</div>
-            <h3>Easy to Use</h3>
-            <p>Simple interface with camera and upload options</p>
-          </div>
-          <div className="feature-card" data-aos="fade-up" data-aos-delay="300">
-            <div className="feature-icon">📊</div>
-            <h3>Analysis History</h3>
-            <p>Track all your previous plant analyses</p>
+      <div className="features-section">
+        <div className="feature-card">
+          <div className="feature-icon">🔍</div>
+          <h3>Plant Identification</h3>
+          <p>Instantly analyze and identify plant diseases using our advanced AI technology</p>
+          <Link to="/analyze" className="feature-button">
+            Analyze Now
+          </Link>
+        </div>
+
+        <div className="feature-card">
+          <div className="feature-icon">🌤️</div>
+          <h3>Weather Updates</h3>
+          <p>Get real-time weather updates and plant care recommendations</p>
+          <Link to="/weather" className="feature-button">
+            Check Weather
+          </Link>
+        </div>
+
+        <div className="feature-card">
+          <div className="feature-icon">📊</div>
+          <h3>Analysis History</h3>
+          <p>View your past analyses and track plant health over time</p>
+          <Link to="/history" className="feature-button">
+            View History
+          </Link>
+        </div>
+
+        <div className="feature-card">
+          <div className="feature-icon">ℹ️</div>
+          <h3>About Us</h3>
+          <p>Learn more about our mission and the technology behind our plant disease detection</p>
+          <Link to="/about" className="feature-button">
+            Learn More
+          </Link>
+        </div>
+      </div>
+
+      <div className="info-section">
+        <div className="info-content">
+          <h2>Why Choose Our Platform?</h2>
+          <div className="info-grid">
+            <div className="info-item">
+              <span className="info-icon">🎯</span>
+              <h4>Accurate Detection</h4>
+              <p>Advanced AI algorithms for precise disease identification</p>
+            </div>
+            <div className="info-item">
+              <span className="info-icon">⚡</span>
+              <h4>Fast Results</h4>
+              <p>Get instant analysis and treatment recommendations</p>
+            </div>
+            <div className="info-item">
+              <span className="info-icon">📱</span>
+              <h4>Easy to Use</h4>
+              <p>Simple interface for quick plant disease detection</p>
+            </div>
+            <div className="info-item">
+              <span className="info-icon">🌿</span>
+              <h4>Plant Health</h4>
+              <p>Comprehensive care guides for healthy plants</p>
+            </div>
           </div>
         </div>
-      </section>
-
-      {/* How It Works Section */}
-      <section className="how-it-works">
-        <h2 className="section-title">How It Works</h2>
-        <div className="steps-container">
-          <div className="step" data-aos="fade-up">
-            <div className="step-number">1</div>
-            <h3>Upload Image</h3>
-            <p>Take a photo or upload an image of your plant for instant analysis</p>
-          </div>
-          <div className="step" data-aos="fade-up" data-aos-delay="100">
-            <div className="step-number">2</div>
-            <h3>AI Analysis</h3>
-            <p>Our advanced AI technology analyzes your plant for diseases and health issues</p>
-          </div>
-          <div className="step" data-aos="fade-up" data-aos-delay="200">
-            <div className="step-number">3</div>
-            <h3>Get Results</h3>
-            <p>Receive detailed diagnosis and personalized treatment recommendations</p>
-          </div>
-        </div>
-      </section>
+      </div>
     </div>
   );
 };

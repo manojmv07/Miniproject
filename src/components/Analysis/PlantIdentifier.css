@@ -62,7 +62,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    background: #2ecc71;
+    background: #2e72cc;
     color: white;
     padding: 5px 15px;
     border-radius: 20px;
@@ -87,7 +87,7 @@
 
 .search-input:focus {
     outline: none;
-    border-color: #2ecc71;
+    border-color: #362ecc;
     box-shadow: 0 0 10px rgba(46, 204, 113, 0.2);
 }
 
@@ -117,7 +117,7 @@
 }
 
 .category-tile.active {
-    background: #2ecc71;
+    background: #2e43cc;
     color: white;
 }
 
@@ -156,7 +156,7 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(to right, #2ecc71, #27ae60);
+    background: linear-gradient(to right, #2e50cc, #2e50cc);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -269,7 +269,7 @@
     width: 40px;
     height: 40px;
     border: 4px solid #f3f3f3;
-    border-top: 4px solid #2ecc71;
+    border-top: 4px solid #2e68cc;
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
@@ -280,7 +280,7 @@
     border-radius: 16px;
     margin: 20px 0;
     box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-    border-left: 5px solid #2ecc71;
+    border-left: 5px solid #2e63cc;
 }
 
 .analysis-result pre {
@@ -408,7 +408,7 @@
 .image-preview {
     margin: 20px 0;
     padding: 10px;
-    background: linear-gradient(45deg, #00C9FF, #92FE9D);
+    background: linear-gradient(45deg, #00C9FF, #18cac1);
     border-radius: 16px;
     position: relative;
     overflow: hidden;
@@ -452,7 +452,7 @@
 .progress-bar {
     width: 0%;
     height: 100%;
-    background: linear-gradient(90deg, #2ecc71, #3498db);
+    background: linear-gradient(90deg, #17e0eb, #3498db);
     border-radius: 10px;
     animation: progress 2s ease-in-out infinite;
 }
@@ -680,12 +680,12 @@
 }
 
 .qa-answer {
-    color: #27ae60;
+    color: #136bd0;
     font-size: 1.05rem;
     line-height: 1.6;
     padding: 0.8rem 1rem;
     background: rgba(39, 174, 96, 0.1);
-    border-left: 4px solid #27ae60;
+    border-left: 4px solid #1a5edb;
     border-radius: 0 8px 8px 0;
     margin: 0.5rem 0 1.5rem 1rem;
 }
@@ -706,7 +706,7 @@
 }
 
 .voice-control-button {
-    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    background: linear-gradient(135deg, #118bd7, #1686cb);
     color: white;
     border: none;
     padding: 12px 24px;
@@ -815,7 +815,7 @@
 }
 
 .language-button:hover {
-    border-color: #2ecc71;
+    border-color: #0a82aa;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(46, 204, 113, 0.1);
 }
@@ -918,7 +918,7 @@
     font-size: 1rem;
     font-weight: 500;
     transition: all 0.3s ease;
-    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    background: linear-gradient(135deg, #0d68a1, #0e70a5);
     color: white;
     box-shadow: 0 4px 15px rgba(46, 204, 113, 0.2);
 }

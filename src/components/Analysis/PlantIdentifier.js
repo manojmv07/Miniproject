@@ -191,12 +191,6 @@ export const getLocationName = async (latitude, longitude) => {
 // Categories Data
 const categories = [
     { id: 'all', name: 'All Plants', emoji: '🌱' },
-    { id: 'cereals', name: 'Cereals & Millets', emoji: '🌾' },
-    { id: 'pulses', name: 'Pulses', emoji: '🫘' },
-    { id: 'vegetables', name: 'Vegetables', emoji: '🥬' },
-    { id: 'fruits', name: 'Fruits', emoji: '🍎' },
-    { id: 'spices', name: 'Spices', emoji: '🌶️' },
-    { id: 'commercial', name: 'Commercial Crops', emoji: '🌿' },
     { id: 'ornamental', name: 'Ornamental Plants', emoji: '🌺' },
     { id: 'medicinal', name: 'Medicinal Plants', emoji: '🌿' },
     { id: 'trees', name: 'Trees', emoji: '🌳' },

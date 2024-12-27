@@ -23,16 +23,16 @@ const WeatherDisplay = ({ data }) => {
       </div>
 
       <div className="weather-details">
-        <div className="detail-item">
-          <span className="label">Wind</span>
+        <div className="metric-box wind">
+          <span className="label">WIND</span>
           <span className="value">{data.current.wind_kph} km/h</span>
         </div>
-        <div className="detail-item">
-          <span className="label">Humidity</span>
+        <div className="metric-box humidity">
+          <span className="label">HUMIDITY</span>
           <span className="value">{data.current.humidity}%</span>
         </div>
-        <div className="detail-item">
-          <span className="label">Feels Like</span>
+        <div className="metric-box feels-like">
+          <span className="label">FEELS LIKE</span>
           <span className="value">{data.current.feelslike_c}°C</span>
         </div>
       </div>
@@ -40,4 +40,4 @@ const WeatherDisplay = ({ data }) => {
   );
 };
 
-export default WeatherDisplay; 
+export default WeatherDisplay;

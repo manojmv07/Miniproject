@@ -2,40 +2,40 @@ import React from 'react';
 import './About.css';
 
 // Import images
-import mithunImage from '../../assets/images/mithun.jpg';
+import chaithraImage from '../../assets/images/chaithra.jpg';
+import adeshImage from '../../assets/images/adesh.jpg';
+import sandeepImage from '../../assets/images/sandeep.jpg';
 import manojImage from '../../assets/images/manoj.jpg';
-import swaroopImage from '../../assets/images/swaroop.jpg';
-import shamanthImage from '../../assets/images/shamanth.jpg';
 
 const About = () => {
   const experts = [
     {
-      name: "Mithun R",
-      phone: "8792048404",
-      role: "Technical Queries",
-      image: mithunImage,
-      expertise: "AI & Machine Learning"
+      name: "Chaithra R",
+      phone: "8904549067",
+      role: "Plant Expert - Commercial Crops",
+      image: chaithraImage,
+      expertise: "Commercial Crop Solutions"
     },
     {
-      name: "Manoj MV",
-      phone: "8073708237",
+      name: "Adesh Gowda R",
+      phone: "7996494774 ",
       role: "Plant Expert - Vegetables",
-      image: manojImage,
+      image: adeshImage,
       expertise: "Vegetable Diseases & Treatment"
     },
     {
-      name: "Swaroop Patil",
-      phone: "7892926970",
+      name: "Sandeep G L",
+      phone: "9845196206",
       role: "Plant Expert - Fruits",
-      image: swaroopImage,
+      image: sandeepImage,
       expertise: "Fruit Crop Management"
     },
     {
-      name: "Shamanth Krishna",
-      phone: "8073655712",
-      role: "Plant Expert - Commercial Crops",
-      image: shamanthImage,
-      expertise: "Commercial Crop Solutions"
+      name: "Manoj M V",
+      phone: "8073708237  /  8867061417",
+      role: "Technical Queries",
+      image: manojImage,
+      expertise: "AI & Machine Learning "
     }
   ];
 

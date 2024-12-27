@@ -2,7 +2,6 @@ import React, { useState, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { SettingsContext } from '../../context/SettingsContext';
 import SettingsModal from '../Settings/SettingsModal';
-import CropInsights from '../CropInsights/CropInsights';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -57,6 +56,10 @@ const Navbar = () => {
         <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>
           ℹ️
           <span>{translate('about')}</span>
+        </Link>
+        <Link to="/language" className={`nav-link ${isActive('/language') ? 'active' : ''}`}>
+          🌐
+          <span>Language</span>
         </Link>
         <Link to="/weather" className={`nav-link ${isActive('/weather') ? 'active' : ''}`}>
           🌤️

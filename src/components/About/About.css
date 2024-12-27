@@ -1,6 +1,6 @@
 .about-container {
   min-height: 100vh;
-  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  background: linear-gradient(135deg, #2c5282 0%, #4299e1 100%);
   padding: 4rem 2rem;
 }
 
@@ -11,7 +11,7 @@
 
 .about-header h1 {
   font-size: 3rem;
-  color: #2c3e50;
+  color: white;
   margin-bottom: 1rem;
   font-weight: 700;
 }
@@ -19,13 +19,13 @@
 .header-underline {
   width: 80px;
   height: 4px;
-  background: #2ecc71;
+  background: #4299e1;
   margin: 1rem auto;
   border-radius: 2px;
 }
 
 .about-header p {
-  color: #666;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto;
@@ -101,7 +101,7 @@
 .role-badge {
   display: inline-block;
   background: #e8f5e9;
-  color: #2ecc71;
+  color: #1081ad;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -116,7 +116,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: #2ecc71;
+  background: #0e84af;
   color: white;
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
@@ -126,7 +126,7 @@
 }
 
 .phone-button:hover {
-  background: #27ae60;
+  background: #035283;
   transform: scale(1.05);
 }
 
@@ -136,7 +136,7 @@
 
 .contact-section {
   margin-top: 6rem;
-  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  background: linear-gradient(135deg, #065f8c, #0c82ad);
   border-radius: 20px;
   padding: 3rem;
   text-align: center;
@@ -154,20 +154,38 @@
 }
 
 .contact-button {
-  display: inline-block;
-  background: white;
-  color: #2ecc71;
-  padding: 1rem 2rem;
-  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #4299e1;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
   text-decoration: none;
-  font-weight: 600;
-  margin-top: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .contact-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  background-color: #3182ce;
+}
+
+.contact-button .phone-icon {
+  color: white;
+}
+
+.expert-specialty {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgba(66, 153, 225, 0.1);
+  color: #4299e1;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
